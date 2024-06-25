@@ -6,7 +6,7 @@ export function galleryTemplate(photos) {
     return `<li class="gallery-item">
     <a href="${photo.largeImageURL}" class="gallery-item-link"
       ><img
-        class="gallery-item-img"
+        class="gallery-item-image"
         src="${photo.webformatURL}"
         alt="${photo.tags}"
         width="360"

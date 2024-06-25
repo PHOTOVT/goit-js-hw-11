@@ -64,9 +64,10 @@ section {
   transition: background-color 0.5s ease-in-out;
 }
 
-.search-btn:hover,
-.search-btn:focus {
+.search-button:hover,
+.search-button:focus {
   background: #6c8cff;
+
 }
 
 .gallery {
@@ -82,7 +83,7 @@ section {
   height: 200px;
 }
 
-.gallery-item-img {
+.gallery-item-image {
   display: block;
   height: 80%;
   width: 100%;
