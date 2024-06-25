@@ -1,7 +1,7 @@
 import{S as m,i as l}from"./assets/vendor-8c59ed88.js";(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const i of o.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function s(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(t){if(t.ep)return;t.ep=!0;const o=s(t);fetch(t.href,o)}})();function d(e){const s=`https://pixabay.com/api/?${new URLSearchParams({key:"44576070-519b0fb3235ae96b7cd44aad7",q:e,image_type:"photo",orientation:"horizontal",safesearch:!0})}`;return fetch(s).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).catch(r=>console.log("Error:",r))}function u(e){return e.map(p).join("")}function p(e){return`<li class="gallery-item">
     <a href="${e.largeImageURL}" class="gallery-item-link"
       ><img
-        class="gallery-item-img"
+        class="gallery-item-image"
         src="${e.webformatURL}"
         alt="${e.tags}"
         width="360"
